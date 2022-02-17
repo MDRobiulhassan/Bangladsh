@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <video autoplay muted loop id="myVideo">
+            <source src="pexels-mohammad-nasim-5300685.mp4" type="video/mp4">
+        </video>
+
+        <div class="header">
+
+            <img src="png-clipart-airplane-aircraft-logo-airplane-blue-logo-thumbnail.png" alt="">
+            <h1>TRAVELLER'S</h1>
+
+        </div>
+
+        <div class="nav-bar">
+
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <a href="#">
+                        <li>CHITTAGONG</li>
+                    </a>
+                    <a href="#">
+                        <li>SYLHET</li>
+                    </a>
+                    <a href="#">
+                        <li>DHAKA</li>
+                    </a>
+                    <a href="#">
+                        <li>BARISHAL</li>
+                    </a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+
+        <p class="para">Explore the beautiful land <br>Bangladesh <img src="Bangladesh.svg.png" alt=""> </p>
+
+        <div class="collection">
+
+            <div class="hero">
+                <div class="bd">
+                    <a href="https://beautifulbangladesh.gov.bd/loc/chattogram" target="_blank">
+                        <img src="Khagrachari-768x484.png" alt="">
+                        <h2>CHITTAGONG</h2>
+                    </a>
+                    <p>Chittagong is large port city on the southeastern coast of Bangladesh. The Ethnological Museum
+                        has exhibits about the many different ethnic tribes across the country.</p>
+                </div>
+
+                <div class="bd">
+                    <a href="https://beautifulbangladesh.gov.bd/loc/sylhet" target="_blank">
+                        <img src="syl.jfif" alt="">
+                        <h2>SYLHET</h2>
+                    </a>
+                    <p>Sylhet is a city in eastern Bangladesh,on the Surma River.It’s known for its Sufi shrines and
+                        ornate tomb mosque of 14th-century saint Hazrat Shah Jalal.</p>
+                </div>
+
+                <div class="bd">
+                    <a href="https://beautifulbangladesh.gov.bd/loc/dhaka" target="_blank">
+                        <img src="dhaka.jpg" alt="">
+                        <h2>DHAKA</h2>
+                    </a>
+                    <p>Dhaka is the capital city of Bangladesh, in southern Asia. Set beside the Buriganga River, it’s
+                        at the center of national government, trade and culture 17th-century Mughal capital.
+                    </p>
+                </div>
+
+                <div class="bd">
+                    <a href="https://beautifulbangladesh.gov.bd/loc/barishal" target="_blank">
+                        <img src="bar.jpg" alt="">
+                        <h2>BARISHAL</h2>
+                    </a>
+                    <p>Barisal, officially known as Barishal, is a major city that lies on the banks of the Kirtankhola
+                        river in south-central Bangladesh. It is the largest city of Bangladesh.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var show = document.getElementById("nav-links");
+        function showMenu() {
+            show.style.right = "0"
+        }
+
+        function closeMenu() {
+            show.style.right = "-280px"
+        }
+    </script>
+
+</body>
+
+</html>
